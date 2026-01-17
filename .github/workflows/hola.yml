@@ -26,4 +26,5 @@ jobs:
           echo "Phase de build"
           echo "Compilation ou construction de l'application"
           echo "fin du cours $lola"
+          echo "${{secrets.Fast_Food}}"
     
