@@ -11,21 +11,19 @@ jobs:
     runs-on: ubuntu-latest
   
     env:
-      STEP1: "Le code vient d'être poussé sur GitHub"
+      lola: "merci beaucoup"
 
     steps:
       - name: Étape 1 - Initialisation 
         run:  |
-          echo "Démarrage du pipeline d'intégration continue" echo "STEP1= $STEP1"
+          echo "Démarrage du pipeline d'intégration continue"
       - name: Étape 2 - Récupération du code 
         run:  |
           echo "Récupération du code source"
-          echo "STEP2=${{vars.STEP2}}
+         
       - name: Etape 3 - Build
         run:  |
           echo "Phase de build"
           echo "Compilation ou construction de l'application"
-      - name: Etape 3 - Build
-        run:  |
-          echo "Phase de build"
-          echo "Compilation ou construction de l'application"
+          echo "fin du cours $lola"
+    
